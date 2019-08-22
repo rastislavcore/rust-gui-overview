@@ -37,19 +37,19 @@ The following options exists but were not included because they are not mature e
 * [Godot](https://godotengine.org/): too much hacky
 * [Azul](https://github.com/maps4print/azul): not enought mature
 
-
-The most promising being Flutter.
+The most promising seems to be Flutter.
 
 ### Ranking
 
 This research results in the following ranking, with the principal criterion being `get the shit done`:
 
 1. [Electron + Neon](#electron-neon)
-2. [Rust program + Qt dynamic](#rust-program-qt-dynamic), [Electron + NodeJS Cpp Addon](#electron-nodejs-cpp-addon)
-3. [Cpp program + Rust lib static + Qt static](#cpp-program-rust-lib-static-qt-static), [Cpp program + Rust lib static + Qt dynamic](#cpp-program-rust-lib-static-qt-dynamic)
-4. [Rust Program + Qt static](#rust-program-qt-static)
-5. [Electron + FFI](#gelectron-ffi)
-6. [Gtk](#gtk)
+2. [Rust program + Qt dynamic](#rust-program-qt-dynamic) for devlopment and [Rust Program + Qt static](#rust-program-qt-static) for deployment,
+3. [Cpp program + Rust lib static + Qt static](#cpp-program-rust-lib-static-qt-static), [Cpp program + Rust lib static + Qt dynamic](#cpp-program-rust-lib-static-qt-dynamic), [Electron + NodeJS Cpp Addon](#electron-nodejs-cpp-addon)
+4. [Electron + FFI](#gelectron-ffi)
+5. [Gtk](#gtk)
+
+
 
 ## Electron
 
@@ -79,14 +79,14 @@ Using Electron as GUI framework, compiling Rust to a native Node module through 
 
 Using Electron as GUI framework, compiling Rust as a static c library and calling it through node `ffi`.
 
-* https://github.com/wtfil/rust-in-node
+* https://github.com/wtfil/rust-in-node#direct-ffi-call
 
 
 ### Electron + NodeJS Cpp Addon
 
 Using Electron as GUI framework, compiling Rust as a static c library and calling it through a NodeJS C++ Addon.
 
-* https://github.com/wtfil/rust-in-node
+* https://github.com/wtfil/rust-in-node#call-dynamic-library-via-c-addon
 * https://nodejs.org/api/addons.html
 
 
