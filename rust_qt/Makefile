@@ -46,3 +46,11 @@ clean_qt:
 
 clean:
 	rm -rf target
+
+rpath_debug:
+	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/lib target/debug/qt
+	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/plugins/platforms target/debug/qt
+
+rpath_release:
+	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/lib target/release/qt
+	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/plugins/platforms target/release/qt

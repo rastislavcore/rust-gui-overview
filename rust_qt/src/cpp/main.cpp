@@ -4,31 +4,32 @@
 #include <QQuickStyle>
 #include <QtCore/QtPlugin>
 
-//#ifndef _WIN32
-//Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
-//Q_IMPORT_PLUGIN(QXcbGlxIntegrationPlugin)
-//Q_IMPORT_PLUGIN(QEvdevKeyboardPlugin)
-//Q_IMPORT_PLUGIN(QEvdevMousePlugin)
-//#else
-//Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin)
-//Q_IMPORT_PLUGIN(QtQuick2DialogsPrivatePlugin)
-//Q_IMPORT_PLUGIN(QmlFolderListModelPlugin)
-//#endif
-//Q_IMPORT_PLUGIN(QmlSettingsPlugin)
-//Q_IMPORT_PLUGIN(QtQuick2DialogsPlugin)
-//Q_IMPORT_PLUGIN(QmlSettingsPlugin)
-//Q_IMPORT_PLUGIN(QtQuick2PrivateWidgetsPlugin)
-
 // static
 #ifdef _QT_STATIC
-// https://doc.qt.io/qt-5/plugins-howto.html#static-plugins
-Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin)
-Q_IMPORT_PLUGIN(QtQuick2Plugin)
-Q_IMPORT_PLUGIN(QtQuickControls2Plugin)
-Q_IMPORT_PLUGIN(QtQuickLayoutsPlugin)
-Q_IMPORT_PLUGIN(QtQuick2WindowPlugin)
-Q_IMPORT_PLUGIN(QtQuickControls2MaterialStylePlugin)
-Q_IMPORT_PLUGIN(QtQuickTemplates2Plugin)
+    // https://doc.qt.io/qt-5/plugins-howto.html#static-plugins
+    #ifdef _WIN32
+        Q_IMPORT_PLUGIN(QWindowsIntegrationPlugin)
+        Q_IMPORT_PLUGIN(QtQuick2DialogsPrivatePlugin)
+        Q_IMPORT_PLUGIN(QmlFolderListModelPlugin)
+    #elif __linux__
+        Q_IMPORT_PLUGIN(QXcbIntegrationPlugin)
+        Q_IMPORT_PLUGIN(QXcbGlxIntegrationPlugin)
+        Q_IMPORT_PLUGIN(QEvdevKeyboardPlugin)
+        Q_IMPORT_PLUGIN(QEvdevMousePlugin)
+    #else // MacOS
+        Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin)
+
+    #endif
+
+    Q_IMPORT_PLUGIN(QtQuick2Plugin)
+    Q_IMPORT_PLUGIN(QtQuickControls2Plugin)
+    Q_IMPORT_PLUGIN(QtQuickLayoutsPlugin)
+    Q_IMPORT_PLUGIN(QtQuick2WindowPlugin)
+    Q_IMPORT_PLUGIN(QtQuickControls2MaterialStylePlugin)
+    Q_IMPORT_PLUGIN(QtQuickTemplates2Plugin)
+//    Q_IMPORT_PLUGIN(QmlSettingsPlugin)
+//    Q_IMPORT_PLUGIN(QmlSettingsPlugin)
+//    Q_IMPORT_PLUGIN(QtQuick2PrivateWidgetsPlugin)
 #endif
 
 extern "C" {

@@ -28,6 +28,7 @@ fn main() {
     println!("cargo:rustc-link-search=target/cpp");
 
     let qt_library_path = qmake_query(&qmake_bin, "QT_INSTALL_LIBS").trim().to_string();
+    let macos_lib_search = if cfg!(target_os = "macos") { "=framework" } else { "" };
 
     if env::var("QT_STATIC").is_ok() {
         // link Qt statically
@@ -36,17 +37,41 @@ fn main() {
             "cargo:rustc-link-search={}/styles",
             qmake_query(&qmake_bin, "QT_INSTALL_PLUGINS").trim().to_string()
         );
+
+        if cfg!(target_os = "macos") {
+            // dyanimically link MacOS platforms frameworks.... it's required
+            println!("cargo:rustc-link-lib{}=CoreGraphics", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=Carbon", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=QuartzCore", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=CoreVideo", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=IOSurface", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=CoreText", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=ImageIO", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=SystemConfiguration", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=DiskArbitration", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=IOKit", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=AppKit", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=Security", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=ApplicationServices", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=CoreServices", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=CoreFoundation", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=Foundation", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=OpenGL", macos_lib_search);
+            println!("cargo:rustc-link-lib{}=AGL", macos_lib_search);
+        }
     } else {
         // link Qt dynamically
         let macos_lib_framework = if cfg!(target_os = "macos") { "" } else { "5" };
-        let macos_lib_search = if cfg!(target_os = "macos") { "=framework" } else { "" };
 
         println!("cargo:rustc-link-search{}={}", macos_lib_search, qt_library_path);
+        println!("cargo:rustc-link-search{}={}/platforms", macos_lib_search, qt_library_path);
         println!("cargo:rustc-link-lib{}=Qt{}Widgets", macos_lib_search, macos_lib_framework);
         println!("cargo:rustc-link-lib{}=Qt{}Gui", macos_lib_search, macos_lib_framework);
         println!("cargo:rustc-link-lib{}=Qt{}Core", macos_lib_search, macos_lib_framework);
         println!("cargo:rustc-link-lib{}=Qt{}Quick", macos_lib_search, macos_lib_framework);
         println!("cargo:rustc-link-lib{}=Qt{}Qml", macos_lib_search, macos_lib_framework);
         println!("cargo:rustc-link-lib{}=Qt{}QuickControls2", macos_lib_search, macos_lib_framework);
+
+
     }
 }
