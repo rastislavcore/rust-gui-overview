@@ -20,6 +20,7 @@
 //Q_IMPORT_PLUGIN(QtQuick2PrivateWidgetsPlugin)
 
 // static
+#ifdef _QT_STATIC
 // https://doc.qt.io/qt-5/plugins-howto.html#static-plugins
 Q_IMPORT_PLUGIN(QCocoaIntegrationPlugin)
 Q_IMPORT_PLUGIN(QtQuick2Plugin)
@@ -28,6 +29,7 @@ Q_IMPORT_PLUGIN(QtQuickLayoutsPlugin)
 Q_IMPORT_PLUGIN(QtQuick2WindowPlugin)
 Q_IMPORT_PLUGIN(QtQuickControls2MaterialStylePlugin)
 Q_IMPORT_PLUGIN(QtQuickTemplates2Plugin)
+#endif
 
 extern "C" {
     int main_cpp(const char* appPath);
