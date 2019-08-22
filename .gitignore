@@ -1,0 +1,12 @@
+# Qt
+*.pro.user
+.qmake.stash
+
+
+# Rust
+target/
+**/*.rs.bk
+
+
+# NodeJS
+node_modules/

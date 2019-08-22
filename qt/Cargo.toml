@@ -1,0 +1,23 @@
+[package]
+name = "qt"
+version = "0.1.0"
+authors = ["z0mbie42 <sylvain@kerkour.fr>"]
+edition = "2018"
+license = "Apache-2.0"
+repository = "https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+grep-matcher = "0.1.1"
+grep-regex = "0.1.1"
+grep-searcher = "0.1.1"
+htmlescape = "0.3.1"
+libc = "0.2"
+spmc = "0.3"
+walkdir = "2"
+
+[build-dependencies]
+# rust_qt_binding_generator = "0.3"
+cpp_build = "0.5"

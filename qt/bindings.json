@@ -1,0 +1,35 @@
+{
+    "cppFile": "src/cpp/Bindings.cpp",
+    "rust": {
+        "dir": "",
+        "interfaceModule": "interface",
+        "implementationModule": "implementation"
+    },
+    "objects": {
+        "Grep": {
+            "type": "List",
+            "properties": {
+                "query": {
+                    "type": "QString",
+                    "write": true
+                },
+                "busy": {
+                    "type": "bool"
+                }
+            },
+            "itemProperties": {
+                "name": {
+                    "type": "QString",
+                    "rustByValue": true
+                },
+                "path": {
+                    "type": "QString",
+                    "rustByValue": true
+                },
+                "line": {
+                    "type": "QString"
+                }
+            }
+        }
+    }
+}
