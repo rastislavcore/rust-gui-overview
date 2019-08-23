@@ -1,6 +1,6 @@
 # Electron + NodeJS Cpp Addon
 
-Simple Electron/Rust/NodeJS Cpp Addon
+Simple Electron/Rust/NodeJS Cpp Addon application
 
 ```bash
 # see https://electronjs.org/docs/tutorial/using-native-node-modules

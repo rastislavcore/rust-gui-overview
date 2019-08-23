@@ -1,0 +1,26 @@
+{
+  "name": "electron_ffi",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview.git"
+  },
+  "author": "z0mbie42",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/issues"
+  },
+  "homepage": "https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview#readme",
+  "devDependencies": {
+    "electron": "^4.2.9"
+  },
+  "dependencies": {
+    "ffi": "^2.3.0"
+  }
+}
