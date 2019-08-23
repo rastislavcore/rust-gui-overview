@@ -128,7 +128,7 @@ Here we test only QML as it's currently the easiest way to build a good looking 
 * https://github.com/KDE/rust-qt-binding-generator
 * https://github.com/rust-qt/ritual
 
-here we will use only `rust-qt-binding-generator`
+here we will only use `rust-qt-binding-generator`
 
 #### Resources
 
