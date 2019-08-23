@@ -20,6 +20,7 @@ The rating ranges from <span style="color:green">++</span> for very good, to <sp
 | CPU usage | <span style="color:red">o</span> | <span style="color:red">o</span> | <span style="color:red">o</span> | <span style="color:green">+</span> |  <span style="color:green">+</span> |  <span style="color:green">+</span> |  <span style="color:green">+</span> | <span style="color:green">++</span> |
 | Security | <span style="color:orange">-</span> | <span style="color:orange">-</span> | <span style="color:orange">-</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> |<span style="color:green">+</span> | <span style="color:green">+</span> |
 | Look | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:red">o</span> |
+| Responsive UI | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:orange">-</span> | <span style="color:orange">-</span> | <span style="color:orange">-</span> | <span style="color:orange">-</span> | <span style="color:red">oo</span> |
 | Framework fixability | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:red">oo</span> | <span style="color:red">oo</span> | <span style="color:red">oo</span> | <span style="color:red">oo</span> | <span style="color:red">o</span> |
 | Platforms support | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:orange">-</span> |
 | Built-in features | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:red">oo</span> |
@@ -120,6 +121,17 @@ Compiling a cpp static library from QT, then linking to a Rust program and also 
 
 
 Really hard to have it compiles... need to link statically all libs and plugins.
+
+#### Troubleshoting
+
+##### Cocoa plugin not found
+```
+qt.qpa.plugin: Could not find the Qt platform plugin "cocoa" in ""
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+```
+
+Qt plugins have not been imported for static linking in Cpp. See https://doc.qt.io/QtForDeviceCreation/qtee-static-linking.html#adding-qml-imports
+
 
 
 ### Rust program + Qt dynamic
