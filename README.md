@@ -37,6 +37,7 @@ The rating ranges from <span style="color:green">++</span> for very good, to <sp
 The following options exists but were not included because they are not mature enough.
 
 * [Flutter desktop](https://github.com/google/flutter-desktop-embedding): not enought mature
+* [Relm](https://github.com/antoyo/relm): Gtk overlay, looks good
 * [Godot](https://godotengine.org/): too much hacky
 * [Unity](https://www.google.com/search?q=unity+rust): too much hacky
 * [Azul](https://github.com/maps4print/azul): not enought mature
@@ -166,6 +167,7 @@ See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overv
 * https://news.ycombinator.com/item?id=19296386
 * https://doc.qt.io/qt-5.9/osx-deployment.html
 * https://gitlab.com/rhn/quemail/tree/master
+* https://doc.rust-lang.org/cargo/reference/build-scripts.html
 
 
 ### Cpp program + Rust lib static + Qt static
