@@ -1,5 +1,7 @@
 .PHONY: build_debug build_release clean
 
+NAME = qt_rust
+
 debug: qt_debug
 	cargo build
 
@@ -48,9 +50,9 @@ clean:
 	rm -rf target
 
 rpath_debug:
-	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/lib target/debug/qt
-	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/plugins/platforms target/debug/qt
+	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/lib target/debug/$(NAME)
+	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/plugins/platforms target/debug/$(NAME)
 
 rpath_release:
-	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/lib target/release/qt
-	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/plugins/platforms target/release/qt
+	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/lib target/release/$(NAME)
+	install_name_tool -add_rpath `qmake -query QT_INSTALL_PREFIX`/plugins/platforms target/release/$(NAME)

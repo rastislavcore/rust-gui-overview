@@ -28,19 +28,21 @@ fn main() {
     println!("cargo:rustc-link-search=target/cpp");
 
     let qt_library_path = qmake_query(&qmake_bin, "QT_INSTALL_LIBS").trim().to_string();
+    let qt_base = qmake_query(&qmake_bin, "QT_INSTALL_PREFIX").trim().to_string();
     let macos_lib_search = if cfg!(target_os = "macos") { "=framework" } else { "" };
 
     if env::var("QT_STATIC").is_ok() {
         // link Qt statically
 
         println!("cargo:rustc-link-search={}", qt_library_path);
+        // for -lqcocoa
+        println!("cargo:rustc-link-search={}/plugins/platforms", qt_base);
+        // for -lqmacstyle
+        println!("cargo:rustc-link-search={}/plugins/styles", qt_base);
+        // for -lqgif -lqicns -lqico -lqjpeg -lqmacheif -lqmacjp2 -llqtga -lqtiff -lqwbmp -lqwebp
+        println!("cargo:rustc-link-search={}/plugins/imageformats", qt_base);
 
         if cfg!(target_os = "macos") {
-            // for -lqmacstyle
-            println!(
-                "cargo:rustc-link-search={}/styles",
-                qmake_query(&qmake_bin, "QT_INSTALL_PLUGINS").trim().to_string()
-            );
             // dyanimically linking MacOS platforms frameworks is still required...
             println!("cargo:rustc-link-lib{}=CoreGraphics", macos_lib_search);
             println!("cargo:rustc-link-lib{}=Carbon", macos_lib_search);
