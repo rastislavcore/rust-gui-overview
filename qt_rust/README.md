@@ -27,6 +27,13 @@ $ QMAKE=[PATH TO STATIC QMAKE] QT_STATIC=1 make run_debug
 # e.g. QMAKE=~/Qt/static/5/bin/qmake QT_STATIC=1 make run_debug
 ```
 
+## Run `qmlscene`
+
+```bash
+$ cd src/cpp
+$ QT_QUICK_CONTROLS_STYLE=material qmlscene -I qml_modules main.qml
+```
+
 ## Screenshots
 
 <img src="qgrep.png" width="180" />
