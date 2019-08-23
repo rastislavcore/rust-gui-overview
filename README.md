@@ -42,7 +42,7 @@ The most promising seems to be Flutter.
 
 ### Ranking
 
-This research results in the following ranking, with the principal criterion being `get the shit done`:
+This research result in the following ranking, with the principal criterion being `get the shit done`:
 
 1. [Electron + Neon](#electron-neon)
 2. [Rust program + Qt dynamic](#rust-program-qt-dynamic) for devlopment and [Rust Program + Qt static](#rust-program-qt-static) for deployment,
