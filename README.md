@@ -60,6 +60,8 @@ This research results in the following ranking, with the principal criterion bei
 
 Using Electron as GUI framework, compiling Rust to a native Node module through Neon bindings.
 
+See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_neon).
+
 * https://keminglabs.com/blog/building-a-fast-electron-app-with-rust/
 * https://neon-bindings.com/docs/electron-apps
 
@@ -115,12 +117,13 @@ https://retifrav.github.io/blog/2018/02/17/build-qt-statically/
 
 Compiling a cpp static library from QT, then linking to a Rust program and also statically linking Qt.
 
+See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_rust#linking-qt-statically).
 
 * https://doc.qt.io/qt-5/qpa.html#qpa-plugins
 * https://jonnyzzz.com/blog/2018/06/13/link-error-3/
 
 
-Really hard to have it compiles... need to link statically all libs and plugins.
+Really hard to have it compile... need to link statically all libs and plugins.
 
 #### Troubleshoting
 
@@ -137,6 +140,8 @@ Qt plugins have not been imported for static linking in Cpp. See https://doc.qt.
 ### Rust program + Qt dynamic
 
 Compiling a cpp static library from QT, then linking to a Rust program and dynamically linking Qt.
+
+See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_rust#linking-qt-dynamically).
 
 
 * *https://github.com/rust-lang/cargo/issues/5077

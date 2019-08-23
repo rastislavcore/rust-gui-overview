@@ -1,0 +1,17 @@
+[package]
+name = "electron_neon"
+version = "0.1.0"
+authors = ["z0mbie42 <sylvain@kerkour.fr>"]
+license = "Apache-2.0"
+build = "build.rs"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "electron_neon"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.3.1"
+
+[dependencies]
+neon = "0.3.1"
