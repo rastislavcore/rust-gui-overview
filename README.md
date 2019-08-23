@@ -10,7 +10,7 @@ The rating ranges from <span style="color:green">++</span> for very good, to <sp
 
 |  | [Electron + Neon](#electron-neon) | [Electron + FFI](#electron-ffi) | [Electron + NodeJS Cpp Addon](#electron-nodejs-cpp-addon) | [Rust Program + Qt static](#rust-program-qt-static) | [Rust program + Qt dynamic](#rust-program-qt-dynamic) | [Cpp program + Rust lib static + Qt static](#cpp-program-rust-lib-static-qt-static) | [Cpp program + Rust lib static + Qt dynamic](#cpp-program-rust-lib-static-qt-dynamic) | [Gtk](#gtk) |
 |-|-|-|-|-|-|-|-|-|
-| Ease of build | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:orange">-</span> | <span style="color:red">oo</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:green">+</span> | <span style="color:green">+</span> |
+| Ease of build | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:red">oo</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:green">+</span> | <span style="color:green">+</span> |
 | Build time | <span style="color:green">++</span> | <span style="color:green">++</span>  |<span style="color:green">++</span>  |<span style="color:red">oo</span> | <span style="color:green">++</span> | <span style="color:red">oo</span> | <span style="color:green">++</span> | <span style="color:orange">-</span> |
 | Bundle size | <span style="color:red">o</span> | <span style="color:red">o</span> | <span style="color:red">o</span> |<span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> |
 | Ease of deployment | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:red">o</span> |
@@ -60,7 +60,7 @@ This research result in the following ranking, with the principal criterion bein
 
 Using Electron as GUI framework, compiling Rust to a native Node module through Neon bindings.
 
-See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_neon).
+See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_neon).
 
 * https://keminglabs.com/blog/building-a-fast-electron-app-with-rust/
 * https://neon-bindings.com/docs/electron-apps
@@ -82,6 +82,8 @@ See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree
 
 Using Electron as GUI framework, compiling Rust as a static c library and calling it through node `ffi`.
 
+See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_ffi).
+
 * https://github.com/wtfil/rust-in-node#direct-ffi-call
 
 
@@ -89,7 +91,7 @@ Using Electron as GUI framework, compiling Rust as a static c library and callin
 
 Using Electron as GUI framework, compiling Rust as a static c library and calling it through a NodeJS C++ Addon.
 
-See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_addon).
+See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_addon).
 
 
 * https://github.com/wtfil/rust-in-node#call-dynamic-library-via-c-addon
@@ -104,23 +106,29 @@ Here we test only QML as it's currently the easiest way to build a good looking 
 * Compile time are reallyyyyyyyy big when linking Qt statically.
 * As QML has it's own JS engine it adds some overhead ([will be improved for Qt6](https://blog.qt.io/blog/2019/08/07/technical-vision-qt-6/)).
 
+3 crates:
+
+* https://github.com/woboq/qmetaobject-rs
+* https://github.com/KDE/rust-qt-binding-generator
+* https://github.com/rust-qt/ritual
+
+here we will use only `rust-qt-binding-generator`
+
 <br/>
 
 * https://blog.qt.io/blog/2018/11/15/python-qt-3000-hours-developer-insight/
-* https://github.com/woboq/qmetaobject-rs
-* https://github.com/KDE/rust-qt-binding-generator
 * https://github.com/shashwatdixit124/IPConnect
 * `macdeployqt`
 * https://doc.qt.io/qt-5/qtquick-bestpractices.html#performance
 * https://woboq.com/blog/qml-vs-cpp-for-application-startup-time.html
-https://retifrav.github.io/blog/2018/02/17/build-qt-statically/
+* https://retifrav.github.io/blog/2018/02/17/build-qt-statically/
 
 
 ### Rust Program + Qt static
 
 Compiling a cpp static library from QT, then linking to a Rust program and also statically linking Qt.
 
-See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_rust#linking-qt-statically).
+See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_rust#linking-qt-statically).
 
 * https://doc.qt.io/qt-5/qpa.html#qpa-plugins
 * https://jonnyzzz.com/blog/2018/06/13/link-error-3/
@@ -144,7 +152,7 @@ Qt plugins have not been imported for static linking in Cpp. See https://doc.qt.
 
 Compiling a cpp static library from QT, then linking to a Rust program and dynamically linking Qt.
 
-See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_rust#linking-qt-dynamically).
+See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_rust#linking-qt-dynamically).
 
 
 * *https://github.com/rust-lang/cargo/issues/5077
@@ -172,8 +180,6 @@ It works moderately, for example if we want the program to be both a CLI and a G
 ### Cpp program + Rust lib static + Qt dynamic
 
 Compiling Rust as a static c library, linking it statically to a Qt program, and linking Qt dynamically.
-
-* https://github.com/rust-qt/ritual
 
 
 

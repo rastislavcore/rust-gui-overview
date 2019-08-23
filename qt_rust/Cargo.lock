@@ -152,7 +152,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "qt"
+name = "qgrep"
 version = "0.1.0"
 dependencies = [
  "cpp_build 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)",

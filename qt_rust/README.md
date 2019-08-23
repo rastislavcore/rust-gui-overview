@@ -9,11 +9,10 @@ To run these examples you need to have Qt (5) installed.
 # on MacOS
 $ make debug
 $ make rpath_debug # Fixes LC_RPATH to include Qt
-# on other platforms
 $ make run_debug
 
-# and then
-$ ./target/debug/qt
+# on other platforms
+$ make run_debug
 ```
 
 ## Linking Qt Statically
@@ -26,10 +25,11 @@ Then uncomment the 1 line following `// static` in [src/main.rs](src/mains.rs).
 $ make clean_qt
 $ QMAKE=[PATH TO STATIC QMAKE] QT_STATIC=1 make run_debug
 # e.g. QMAKE=~/Qt/static/5/bin/qmake QT_STATIC=1 make run_debug
-
-# and then
-$ ./target/debug/qt
 ```
+
+## Screenshots
+
+<img src="qgrep.png" width="180" />
 
 
 ## License

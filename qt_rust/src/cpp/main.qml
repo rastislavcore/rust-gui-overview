@@ -18,7 +18,7 @@ ApplicationWindow {
     header: ToolBar {
         Label {
             anchors.fill: parent
-            text: qsTr("Qrep")
+            text: qsTr("Qgrep")
             font.pixelSize: 30
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter

@@ -1,6 +1,6 @@
 .PHONY: build_debug build_release clean
 
-NAME = qt_rust
+NAME = qgrep
 
 debug: qt_debug
 	cargo build
@@ -30,7 +30,7 @@ qt_debug:
 
 qt_debug_static:
 	mkdir -p target/cpp/debug
-	cd target/cpp/debug && qmake CONFIG+=debug DEFINES+="_QT_STATIC" ../../../src/cpp/qgrep.pro && make
+	cd target/cpp/debug && qmake CONFIG+=debug DEFINES+="_QT_STATIC" ../../../src/cpp/todos.pro && make
 	cp target/cpp/debug/libqgrep.a target/cpp/libqgrep.a
 
 qt_release:

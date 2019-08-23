@@ -1,0 +1,11 @@
+
+[package]
+name = "todos"
+version = "1.0.0"
+
+[dependencies]
+libc = "*"
+
+[lib]
+name = "todos"
+crate-type = ["staticlib"]
