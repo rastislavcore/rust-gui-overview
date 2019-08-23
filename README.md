@@ -56,6 +56,8 @@ This research result in the following ranking, with the principal criterion bein
 
 ## Electron
 
+#### Resources
+
 * https://github.com/martpie/museeks
 
 ### Electron + neon
@@ -63,6 +65,8 @@ This research result in the following ranking, with the principal criterion bein
 Using Electron as GUI framework, compiling Rust to a native Node module through Neon bindings.
 
 See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_neon).
+
+#### Resources
 
 * https://keminglabs.com/blog/building-a-fast-electron-app-with-rust/
 * https://neon-bindings.com/docs/electron-apps
@@ -86,6 +90,8 @@ Using Electron as GUI framework, compiling Rust as a static c library and callin
 
 See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_ffi).
 
+#### Resources
+
 * https://github.com/wtfil/rust-in-node#direct-ffi-call
 
 
@@ -95,6 +101,7 @@ Using Electron as GUI framework, compiling Rust as a static c library and callin
 
 See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_addon).
 
+#### Resources
 
 * https://github.com/wtfil/rust-in-node#call-dynamic-library-via-c-addon
 * https://nodejs.org/api/addons.html
@@ -116,7 +123,7 @@ Here we test only QML as it's currently the easiest way to build a good looking 
 
 here we will use only `rust-qt-binding-generator`
 
-<br/>
+#### Resources
 
 * https://blog.qt.io/blog/2018/11/15/python-qt-3000-hours-developer-insight/
 * https://github.com/shashwatdixit124/IPConnect
@@ -130,13 +137,15 @@ here we will use only `rust-qt-binding-generator`
 
 Compiling a cpp static library from QT, then linking to a Rust program and also statically linking Qt.
 
+Really hard to have it compile... need to link statically all libs and plugins.
+
 See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_rust#linking-qt-statically).
+
+#### Resources
 
 * https://doc.qt.io/qt-5/qpa.html#qpa-plugins
 * https://jonnyzzz.com/blog/2018/06/13/link-error-3/
 
-
-Really hard to have it compile... need to link statically all libs and plugins.
 
 #### Troubleshooting
 
@@ -156,12 +165,7 @@ Compiling a cpp static library from QT, then linking to a Rust program and dynam
 
 See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_rust#linking-qt-dynamically).
 
-
-* *https://github.com/rust-lang/cargo/issues/5077
-* https://github.com/rust-lang/rust/issues/17219
-* https://wincent.com/wiki/@executable_path,_@load_path_and_@rpath
-
-<br/>
+#### Resources
 
 * https://wiki.qt.io/How_to_create_a_library_with_Qt_and_use_it_in_an_application
 * https://stackoverflow.com/questions/10034825/how-do-i-build-a-static-library-and-executable-with-qt
@@ -169,19 +173,32 @@ See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overv
 * https://doc.qt.io/qt-5.9/osx-deployment.html
 * https://gitlab.com/rhn/quemail/tree/master
 
+#### Troubleshooting
+
+* https://github.com/rust-lang/cargo/issues/5077
+* https://github.com/rust-lang/rust/issues/17219
+* https://wincent.com/wiki/@executable_path,_@load_path_and_@rpath
+
+
 
 ### Cpp program + Rust lib static + Qt static
 
 Compiling Rust as a static c library, linking it statically to a Qt program, and also linking Qt statically.
 
-* https://github.com/spieglt/cloaker
-
 It works moderately, for example if we want the program to be both a CLI and a GUI.
+
+See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_cpp).
+
+#### Resources
+
+* https://github.com/spieglt/cloaker
 
 
 ### Cpp program + Rust lib static + Qt dynamic
 
 Compiling Rust as a static c library, linking it statically to a Qt program, and linking Qt dynamically.
+
+See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/qt_cpp).
 
 
 
@@ -191,6 +208,7 @@ using the Rust Gtk bindings directly from Rust.
 
 It's the more integrated solution, but it's really, really, **REALLY** ugly and hard to customize.
 
+#### Resources
 * https://github.com/gtk-rs/gtk
 * https://gtk-rs.org/
 
