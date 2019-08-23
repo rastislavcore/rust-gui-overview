@@ -6,5 +6,6 @@ SOURCES       = main.cpp \
 QT += widgets qml quick quickcontrols2
 requires(qtConfig(combobox))
 
+CONFIG += qtquickcompiler
 
 LIBS += -L../../release -ltodos
