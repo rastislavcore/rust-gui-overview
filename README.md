@@ -139,6 +139,7 @@ here we will only use `rust-qt-binding-generator`
 * https://doc.qt.io/qt-5/qtquick-bestpractices.html#performance
 * https://woboq.com/blog/qml-vs-cpp-for-application-startup-time.html
 * https://retifrav.github.io/blog/2018/02/17/build-qt-statically/
+* https://www.kdab.com/qml-engine-internals-part-1-qml-file-loading/
 
 
 ### Rust Program + Qt static
