@@ -209,12 +209,19 @@ using the Rust Gtk bindings directly from Rust.
 It's the more integrated solution, but it's really, really, **REALLY** ugly and hard to customize.
 
 #### Resources
+
 * https://github.com/gtk-rs/gtk
 * https://gtk-rs.org/
 
 ### Examples
 
 * https://gtk-rs.org/#projects-using-gtk-rs
+
+### Troubleshooting
+
+```bash
+$ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig" cargo run
+```
 
 
 ## Others
