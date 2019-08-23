@@ -204,6 +204,7 @@ It's the more integrated solution, but it's really, **REALLY** ugly and hard to 
 
 * https://github.com/gtk-rs/gtk
 * https://gtk-rs.org/
+* https://news.ycombinator.com/item?id=20368618
 * https://gtk-rs.org/docs/gtk/struct.CssProvider.html
 * https://medium.com/@alex285/quickly-set-your-gtk-rust-environment-start-coding-9cdfb18b7729
 * https://blog.microjoe.org/2018/application-gtk-rust-glade.html
