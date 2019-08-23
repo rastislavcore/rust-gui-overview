@@ -21,7 +21,7 @@ The rating ranges from <span style="color:green">++</span> for very good, to <sp
 | RAM usage | <span style="color:orange">o</span> | <span style="color:orange">o</span>  | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span>  | <span style="color:orange">o</span>  | <span style="color:green">+</span> |
 | CPU usage | <span style="color:red">-</span> | <span style="color:red">-</span> | <span style="color:red">-</span> | <span style="color:green">++</span> |  <span style="color:green">++</span> |  <span style="color:green">++</span> |  <span style="color:green">++</span> | <span style="color:green">++</span> |
 | Security | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> |<span style="color:green">+</span> | <span style="color:green">+</span> |
-| Look | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:red">-</span> |
+| Look | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:orange">o</span> |
 | Responsive UI | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:red">--</span> |
 | Framework fixability | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:red">--</span> | <span style="color:red">--</span> | <span style="color:red">--</span> | <span style="color:red">--</span> | <span style="color:red">-</span> |
 | Platforms support | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> |
@@ -152,18 +152,6 @@ See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overv
 * https://jonnyzzz.com/blog/2018/06/13/link-error-3/
 
 
-#### Troubleshooting
-
-##### Cocoa plugin not found
-```
-qt.qpa.plugin: Could not find the Qt platform plugin "cocoa" in ""
-This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
-```
-
-Qt plugins have not been imported for static linking in Cpp. See https://doc.qt.io/QtForDeviceCreation/qtee-static-linking.html#adding-qml-imports
-
-
-
 ### Rust program + Qt dynamic
 
 Compiling a cpp static library from QT, then linking to a Rust program and dynamically linking Qt.
@@ -177,13 +165,6 @@ See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overv
 * https://news.ycombinator.com/item?id=19296386
 * https://doc.qt.io/qt-5.9/osx-deployment.html
 * https://gitlab.com/rhn/quemail/tree/master
-
-#### Troubleshooting
-
-* https://github.com/rust-lang/cargo/issues/5077
-* https://github.com/rust-lang/rust/issues/17219
-* https://wincent.com/wiki/@executable_path,_@load_path_and_@rpath
-
 
 
 ### Cpp program + Rust lib static + Qt static
@@ -221,9 +202,3 @@ It's the more integrated solution, but it's really, really, **REALLY** ugly and 
 ### Examples
 
 * https://gtk-rs.org/#projects-using-gtk-rs
-
-### Troubleshooting
-
-```bash
-$ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig" cargo run
-```
