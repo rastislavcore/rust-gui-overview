@@ -44,6 +44,7 @@ The following options exists but were not included because they are not mature e
 * [Conrod](https://github.com/PistonDevelopers/conrod): not mature enough
 * [Druid](https://github.com/xi-editor/druid): not mature enough
 * https://areweguiyet.com
+* [libui](https://github.com/rust-native-ui/libui-rs): not mature enough
 * [Platform specific libraries](https://areweguiyet.com/newsfeed/2019-01-13_rust2019.html): because we need cross-platform app.
 * [Sciter](https://crates.io/crates/sciter-rs)
 * Web broswer communicating with a Rust local server: too much hacky, insecure? (DNS rebinding attacks) and does not support native features like tray icons.
