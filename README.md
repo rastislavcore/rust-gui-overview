@@ -38,6 +38,7 @@ The following options exists but were not included because they are not mature e
 
 * [Flutter desktop](https://github.com/google/flutter-desktop-embedding): not enought mature
 * [Godot](https://godotengine.org/): too much hacky
+* [Unity](https://www.google.com/search?q=unity+rust): too much hacky
 * [Azul](https://github.com/maps4print/azul): not enought mature
 * [Conrod](https://github.com/PistonDevelopers/conrod): not enought mature
 * [Druid](https://github.com/xi-editor/druid): not enought mature
