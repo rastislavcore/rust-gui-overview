@@ -41,6 +41,7 @@ The following options exists but were not included because they are not mature e
 * [Azul](https://github.com/maps4print/azul): not enought mature
 * [Conrod](https://github.com/PistonDevelopers/conrod): not enought mature
 * [Druid](https://github.com/xi-editor/druid): not enought mature
+* https://areweguiyet.com
 * [Platform specific libraries](https://areweguiyet.com/newsfeed/2019-01-13_rust2019.html): because we need cross-platform app.
 * Web broswer communicating with a Rust local server: too much hacky, insecure? (DNS rebinding attacks) and does not support native features like tray icons.
 
@@ -211,7 +212,7 @@ using the Rust Gtk bindings directly from Rust.
 
 It's the more integrated solution, but it's really, really, **REALLY** ugly and hard to customize.
 
-#### Resources
+### Resources
 
 * https://github.com/gtk-rs/gtk
 * https://gtk-rs.org/
@@ -225,8 +226,3 @@ It's the more integrated solution, but it's really, really, **REALLY** ugly and 
 ```bash
 $ export PKG_CONFIG_PATH="/usr/local/opt/libffi/lib/pkgconfig" cargo run
 ```
-
-
-## Others
-
-* https://areweguiyet.com/
