@@ -40,6 +40,7 @@ The following options exists but were not included because they are not mature e
 * [Godot](https://godotengine.org/): too much hacky
 * [Azul](https://github.com/maps4print/azul): not enought mature
 * [Conrod](https://github.com/PistonDevelopers/conrod): not enought mature
+* [Druid](https://github.com/xi-editor/druid): not enought mature
 * [Platform specific libraries](https://areweguiyet.com/newsfeed/2019-01-13_rust2019.html): because we need cross-platform app.
 
 The most promising seems to be Flutter.
