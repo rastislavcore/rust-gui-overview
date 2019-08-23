@@ -44,6 +44,7 @@ The following options exists but were not included because they are not mature e
 * [Druid](https://github.com/xi-editor/druid): not enought mature
 * https://areweguiyet.com
 * [Platform specific libraries](https://areweguiyet.com/newsfeed/2019-01-13_rust2019.html): because we need cross-platform app.
+* [Sciter](https://crates.io/crates/sciter-rs)
 * Web broswer communicating with a Rust local server: too much hacky, insecure? (DNS rebinding attacks) and does not support native features like tray icons.
 
 The most promising seems to be Flutter.
@@ -198,7 +199,12 @@ It's the more integrated solution, but it's really, really, **REALLY** ugly and 
 
 * https://github.com/gtk-rs/gtk
 * https://gtk-rs.org/
+* https://gtk-rs.org/docs/gtk/struct.CssProvider.html
+* https://medium.com/@alex285/quickly-set-your-gtk-rust-environment-start-coding-9cdfb18b7729
+* https://blog.microjoe.org/2018/application-gtk-rust-glade.html
+* https://gitlab.gnome.org/bilelmoussaoui/gtk-rust-template
 
 ### Examples
 
 * https://gtk-rs.org/#projects-using-gtk-rs
+* https://github.com/waf/strack
