@@ -2,6 +2,8 @@
 
 author: [Sylvain Kerkour (z0mbie42)](https://www.kerkour.fr)
 
+Prepared for: [Bloom](https://gitlab.com/bloom42)
+
 ----------
 
 This research document compares the available, production ready GUI options for Rust.
