@@ -24,7 +24,7 @@ The rating ranges from <span style="color:green">++</span> for very good, to <sp
 | Look | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:red">-</span> |
 | Responsive UI | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:red">--</span> |
 | Framework fixability | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:red">--</span> | <span style="color:red">--</span> | <span style="color:red">--</span> | <span style="color:red">--</span> | <span style="color:red">-</span> |
-| Platforms support | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:orange">o</span> |
+| Platforms support | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> |
 | Built-in features | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:red">-</span> |
 | 3rd party components | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:red">--</span> |
 | Debugging | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> | <span style="color:orange">o</span> |
@@ -48,9 +48,8 @@ This research result in the following ranking, with the principal criterion bein
 
 1. [Electron + Neon](#electron-neon)
 2. [Rust program + Qt dynamic](#rust-program-qt-dynamic) for devlopment and [Rust Program + Qt static](#rust-program-qt-static) for deployment
-3. [Cpp program + Rust lib static + Qt static](#cpp-program-rust-lib-static-qt-static), [Cpp program + Rust lib static + Qt dynamic](#cpp-program-rust-lib-static-qt-dynamic), [Electron + NodeJS Cpp Addon](#electron-nodejs-cpp-addon)
+3. [Gtk](#gtk), [Cpp program + Rust lib static + Qt static](#cpp-program-rust-lib-static-qt-static), [Cpp program + Rust lib static + Qt dynamic](#cpp-program-rust-lib-static-qt-dynamic), [Electron + NodeJS Cpp Addon](#electron-nodejs-cpp-addon)
 4. [Electron + FFI](#electron-ffi)
-5. [Gtk](#gtk)
 
 
 
