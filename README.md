@@ -15,7 +15,7 @@ The rating ranges from <span style="color:green">++</span> for very good, to <sp
 | Bundle size | <span style="color:red">o</span> | <span style="color:red">o</span> | <span style="color:red">o</span> |<span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> |
 | Ease of deployment | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:red">o</span> |
 | Rust interoperability | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span>| <span style="color:green">++</span> |
-| Speed of devlopment | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:red">o</span> | <span style="color:red">o</span> | <span style="color:red">o</span> | <span style="color:red">o</span> | <span style="color:red">oo</span> |
+| Speed of devlopment | <span style="color:green">++</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:green">+</span> | <span style="color:red">oo</span> | <span style="color:green">+</span> | <span style="color:red">oo</span> | <span style="color:red">oo</span> |
 | RAM usage | <span style="color:orange">-</span> | <span style="color:orange">-</span>  | <span style="color:orange">-</span> | <span style="color:orange">-</span> | <span style="color:orange">-</span> | <span style="color:orange">-</span>  | <span style="color:orange">-</span>  | <span style="color:green">+</span> |
 | CPU usage | <span style="color:red">o</span> | <span style="color:red">o</span> | <span style="color:red">o</span> | <span style="color:green">++</span> |  <span style="color:green">++</span> |  <span style="color:green">++</span> |  <span style="color:green">++</span> | <span style="color:green">++</span> |
 | Security | <span style="color:orange">-</span> | <span style="color:orange">-</span> | <span style="color:orange">-</span> | <span style="color:green">+</span> | <span style="color:green">+</span> | <span style="color:green">+</span> |<span style="color:green">+</span> | <span style="color:green">+</span> |
@@ -187,7 +187,11 @@ Compiling Rust as a static c library, linking it statically to a Qt program, and
 
 using the Rust Gtk bindings directly from Rust.
 
-ugly ...
+It's the more integrated solution, but it's really, really, **REALLY** ugly and hard to customize.
 
 * https://github.com/gtk-rs/gtk
 * https://gtk-rs.org/
+
+### Examples
+
+* https://gtk-rs.org/#projects-using-gtk-rs
