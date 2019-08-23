@@ -36,13 +36,13 @@ The rating ranges from <span style="color:green">++</span> for very good, to <sp
 
 The following options exists but were not included because they are not mature enough.
 
-* [Flutter desktop](https://github.com/google/flutter-desktop-embedding): not enought mature
+* [Flutter desktop](https://github.com/google/flutter-desktop-embedding): not mature enough
 * [Relm](https://github.com/antoyo/relm): Gtk overlay, looks good
 * [Godot](https://godotengine.org/): too much hacky
 * [Unity](https://www.google.com/search?q=unity+rust): too much hacky
-* [Azul](https://github.com/maps4print/azul): not enought mature
-* [Conrod](https://github.com/PistonDevelopers/conrod): not enought mature
-* [Druid](https://github.com/xi-editor/druid): not enought mature
+* [Azul](https://github.com/maps4print/azul): not mature enough
+* [Conrod](https://github.com/PistonDevelopers/conrod): not mature enough
+* [Druid](https://github.com/xi-editor/druid): not mature enough
 * https://areweguiyet.com
 * [Platform specific libraries](https://areweguiyet.com/newsfeed/2019-01-13_rust2019.html): because we need cross-platform app.
 * [Sciter](https://crates.io/crates/sciter-rs)
