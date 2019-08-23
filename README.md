@@ -195,7 +195,7 @@ See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overv
 
 using the Rust Gtk bindings directly from Rust.
 
-It's the more integrated solution, but it's really, really, **REALLY** ugly and hard to customize.
+It's the more integrated solution, but it's really, **REALLY** ugly and hard to customize.
 
 ### Resources
 
