@@ -8,7 +8,7 @@ This research document compares the available, production ready GUI options for 
 
 The rating ranges from <span style="color:green">++</span> for very good, to <span style="color:red">oo</span> for very bad, with <span style="color:orange">-</span> for mean.
 
-|  | [Electron + Neon](#electron-neon) | [Electron + FFI](#gelectron-ffi) | [Electron + NodeJS Cpp Addon](#electron-nodejs-cpp-addon) | [Rust Program + Qt static](#rust-program-qt-static) | [Rust program + Qt dynamic](#rust-program-qt-dynamic) | [Cpp program + Rust lib static + Qt static](#cpp-program-rust-lib-static-qt-static) | [Cpp program + Rust lib static + Qt dynamic](#cpp-program-rust-lib-static-qt-dynamic) | [Gtk](#gtk) |
+|  | [Electron + Neon](#electron-neon) | [Electron + FFI](#electron-ffi) | [Electron + NodeJS Cpp Addon](#electron-nodejs-cpp-addon) | [Rust Program + Qt static](#rust-program-qt-static) | [Rust program + Qt dynamic](#rust-program-qt-dynamic) | [Cpp program + Rust lib static + Qt static](#cpp-program-rust-lib-static-qt-static) | [Cpp program + Rust lib static + Qt dynamic](#cpp-program-rust-lib-static-qt-dynamic) | [Gtk](#gtk) |
 |-|-|-|-|-|-|-|-|-|
 | Ease of build | <span style="color:green">++</span> | <span style="color:green">++</span> | <span style="color:orange">-</span> | <span style="color:red">oo</span> | <span style="color:green">+</span> | <span style="color:orange">-</span> | <span style="color:green">+</span> | <span style="color:green">+</span> |
 | Build time | <span style="color:green">++</span> | <span style="color:green">++</span>  |<span style="color:green">++</span>  |<span style="color:red">oo</span> | <span style="color:green">++</span> | <span style="color:red">oo</span> | <span style="color:green">++</span> | <span style="color:orange">-</span> |
@@ -45,9 +45,9 @@ The most promising seems to be Flutter.
 This research result in the following ranking, with the principal criterion being `get the shit done`:
 
 1. [Electron + Neon](#electron-neon)
-2. [Rust program + Qt dynamic](#rust-program-qt-dynamic) for devlopment and [Rust Program + Qt static](#rust-program-qt-static) for deployment,
+2. [Rust program + Qt dynamic](#rust-program-qt-dynamic) for devlopment and [Rust Program + Qt static](#rust-program-qt-static) for deployment
 3. [Cpp program + Rust lib static + Qt static](#cpp-program-rust-lib-static-qt-static), [Cpp program + Rust lib static + Qt dynamic](#cpp-program-rust-lib-static-qt-dynamic), [Electron + NodeJS Cpp Addon](#electron-nodejs-cpp-addon)
-4. [Electron + FFI](#gelectron-ffi)
+4. [Electron + FFI](#electron-ffi)
 5. [Gtk](#gtk)
 
 
@@ -128,7 +128,7 @@ See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree
 
 Really hard to have it compile... need to link statically all libs and plugins.
 
-#### Troubleshoting
+#### Troubleshooting
 
 ##### Cocoa plugin not found
 ```
