@@ -1,0 +1,21 @@
+{
+  "name": "addon-rs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "node/index.js",
+  "gypfile": true,
+  "scripts": {
+    "build": "cd node && node-gyp configure build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview.git"
+  },
+  "author": "z0mbie42",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/issues"
+  },
+  "homepage": "https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview#readme"
+}

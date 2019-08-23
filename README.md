@@ -89,6 +89,9 @@ Using Electron as GUI framework, compiling Rust as a static c library and callin
 
 Using Electron as GUI framework, compiling Rust as a static c library and calling it through a NodeJS C++ Addon.
 
+See [here for code](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview/tree/master/electron_addon).
+
+
 * https://github.com/wtfil/rust-in-node#call-dynamic-library-via-c-addon
 * https://nodejs.org/api/addons.html
 
