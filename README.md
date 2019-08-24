@@ -36,7 +36,7 @@ The rating ranges from <span style="color:green">++</span> for very good, to <sp
 
 The following options exists but were not included because they are not mature enough.
 
-* [Flutter desktop](https://github.com/google/flutter-desktop-embedding): not mature enough
+* [Flutter desktop](https://github.com/google/flutter-desktop-embedding) & [flutter-rs](https://github.com/gliheng/flutter-rs): not mature enough
 * [Relm](https://github.com/antoyo/relm): Gtk overlay, looks good
 * [Godot](https://godotengine.org/): too much hacky
 * [Unity](https://www.google.com/search?q=unity+rust): too much hacky
