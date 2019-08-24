@@ -46,6 +46,7 @@ The following options exists but were not included because they are not mature e
 * https://areweguiyet.com
 * [libui](https://github.com/rust-native-ui/libui-rs): not mature enough
 * [Platform specific libraries](https://areweguiyet.com/newsfeed/2019-01-13_rust2019.html): because we need cross-platform app.
+* [ImGUI](https://github.com/Gekkio/imgui-rs): not mature enough
 * [Sciter](https://crates.io/crates/sciter-rs): proprietary
 * Web broswer communicating with a Rust local server: too much hacky, insecure? (DNS rebinding attacks) and does not support native features like tray icons.
 
