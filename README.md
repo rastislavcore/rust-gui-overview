@@ -91,6 +91,7 @@ See [here for code example](https://gitlab.com/z0mbie42/rust_gui_ecosystem_overv
 * https://github.com/shade/rustoku
 * https://github.com/mullvad/mullvadvpn-app
 * https://github.com/FIL1994/electron-and-rust
+* https://gitlab.com/p8n/verso
 
 
 ### Electron + FFI
