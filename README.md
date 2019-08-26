@@ -146,6 +146,7 @@ here we will only use `rust-qt-binding-generator`
 * https://www.kdab.com/qml-engine-internals-part-1-qml-file-loading/
 * https://doc.qt.io/QtQuickCompiler/
 * https://www.kdab.com/declarative-widgets/
+* https://gitlab.com/b0/spectral
 
 
 ### Rust Program + Qt static
