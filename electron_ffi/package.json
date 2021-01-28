@@ -18,7 +18,7 @@
   },
   "homepage": "https://gitlab.com/z0mbie42/rust_gui_ecosystem_overview#readme",
   "devDependencies": {
-    "electron": "^4.2.9"
+    "electron": "^9.4.0"
   },
   "dependencies": {
     "ffi": "^2.3.0"
