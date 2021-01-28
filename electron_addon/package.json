@@ -22,6 +22,6 @@
     "addon-rs": "file:./addon-rs"
   },
   "devDependencies": {
-    "electron": "^6.0.3"
+    "electron": "^9.4.0"
   }
 }
